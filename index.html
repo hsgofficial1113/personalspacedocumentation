@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - Dula's Space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            --primary-color: #5f27cd;
+            --accent-color: #ff7675;
+            --text-color: #444;
+            --white-glass: rgba(255, 255, 255, 0.9);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background: var(--white-glass);
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 2px solid rgba(0,0,0,0.05);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .icon-box {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Password Box */
+        .password-box {
+            background: #e056fd;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .note {
+            background: rgba(255, 234, 167, 0.4);
+            padding: 15px;
+            border-left: 4px solid #fdcb6e;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .feature-grid { grid-template-columns: 1fr; }
+            .container { padding: 20px; width: 95%; margin: 20px 0; }
+            h1 { font-size: 1.8rem; }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🌸 Dula’s Personal Space</h1>
+            <div class="subtitle">Your Digital Sanctuary & Organizer</div>
+        </header>
+
+        <div class="section">
+            <p><strong>Welcome Home! ✨</strong><br>
+            This app is your private corner of the internet. Whether you need to organize your day, vent in your diary, study hard, or just relax—everything you need is right here.</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-key"></i> Getting Started</h2>
+            <ul>
+                <li><strong>How to Open:</strong> Simply tap the App Icon (or file) on your phone. It works just like a native app.</li>
+                <li><strong>Security:</strong> The space is locked to protect your privacy.</li>
+            </ul>
+            <div class="password-box">
+                🔑 Default Password: 2004
+            </div>
+            <div style="text-align:center; font-size:0.8rem; color:#666;">(You can change this in Settings!)</div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-map-signs"></i> The Tour</h2>
+            <div class="feature-grid">
+                
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-home"></i></div>
+                    <h3>Home Dashboard</h3>
+                    <p>See a new daily motivational quote, a live "Life Clock" of your exact age, and smart weather tips (like "Grab an umbrella! ☔").</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>The Planner</h3>
+                    <p><strong>To-Do:</strong> Add tasks and cross them off.<br><strong>Schedule:</strong> Type your weekly plan into the boxes; it saves automatically as you write.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-book-open"></i></div>
+                    <h3>My Diary</h3>
+                    <p>Write your daily thoughts. You can even paste an image link to attach a photo to your memory.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-folder-open"></i></div>
+                    <h3>Study Binder</h3>
+                    <p>Create folders for subjects. Save text notes, website links, or upload PDFs directly to the app!</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-robot"></i></div>
+                    <h3>AI Helper</h3>
+                    <p>Chat with your <strong>AI Study Genie</strong>. It's smart, helpful, and ready 24/7 to answer homework questions.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon-box"><i class="fas fa-gamepad"></i></div>
+                    <h3>Boredom Buster</h3>
+                    <p>Spin the wheel to decide what to do, or play Rock Paper Scissors & Tic-Tac-Toe instantly.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-coffee"></i> Comfort Zone</h2>
+            <p>Feeling stressed or tired? This section is for you.</p>
+            <ul>
+                <li><strong>Rain Cloud:</strong> Starts a guided breathing exercise.</li>
+                <li><strong>Headphones:</strong> Plays relaxing Lofi beats.</li>
+                <li><strong>Toys:</strong> Play with digital fluids, silk art, or pop virtual bubble wrap.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-cog"></i> Settings & Safety</h2>
+            <p>Found under the Cog Icon (⚙️) in the menu.</p>
+            <ul>
+                <li><strong>Change Password:</strong> Set your own secret code.</li>
+                <li><strong>Backup Data:</strong> Since this app lives on your phone, click <strong>"Download Backup"</strong> occasionally to save your diary and notes to a safe file.</li>
+            </ul>
+            <div class="note">
+                <strong>💡 Mobile Tip:</strong> The menu bar automatically moves to the <strong>bottom</strong> of the screen on your phone so it's easy to reach with your thumbs!
+            </div>
+        </div>
+
+        <footer>
+            Made with ❤️ for Dula.
+        </footer>
+    </div>
+
+</body>
+</html>
